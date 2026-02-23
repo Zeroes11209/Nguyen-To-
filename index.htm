@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyen Le - Ultra Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#000,#111,#000);
+background-size:400% 400%;
+animation:bgMove 10s infinite alternate ease-in-out;
+}
+
+@keyframes bgMove{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.card{
+width:90%;
+max-width:520px;
+padding:35px;
+border-radius:22px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 40px rgba(255,255,255,0.08);
+color:white;
+text-align:center;
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);} 
+to{opacity:1;transform:translateY(0);} 
+}
+
+/* Spinning Disc */
+.disc{
+width:150px;
+height:150px;
+margin:0 auto 20px;
+border-radius:50%;
+background:radial-gradient(circle,#111 40%,#000 70%);
+border:2px solid rgba(255,255,255,0.3);
+display:flex;
+justify-content:center;
+align-items:center;
+animation:spin 6s linear infinite;
+box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+.disc::before{
+content:"★";
+font-size:55px;
+color:white;
+text-shadow:0 0 15px rgba(255,255,255,0.9);
+animation:starPulse 2s infinite alternate;
+}
+
+@keyframes spin{
+from{transform:rotate(0deg);} 
+to{transform:rotate(360deg);} 
+}
+
+@keyframes starPulse{
+from{text-shadow:0 0 10px rgba(255,255,255,0.6);} 
+to{text-shadow:0 0 25px rgba(255,255,255,1);} 
+}
+
+h1{
+font-size:26px;
+margin-bottom:10px;
+letter-spacing:2px;
+}
+
+.bio{
+font-size:15px;
+opacity:0.85;
+margin-bottom:25px;
+}
+
+/* Ultra Glass Buttons */
+.links a{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+text-decoration:none;
+color:white;
+margin:12px 0;
+padding:14px;
+border-radius:14px;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.2);
+overflow:hidden;
+transition:all 0.4s ease;
+backdrop-filter:blur(10px);
+}
+
+.links a::before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent);
+transform:rotate(25deg);
+top:-150%;
+left:-150%;
+transition:0.6s;
+}
+
+.links a:hover::before{
+top:150%;
+left:150%;
+}
+
+.links a:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 0 25px rgba(255,255,255,0.6);
+background:rgba(255,255,255,0.15);
+}
+
+.links a i{
+transition:0.3s;
+}
+
+.links a:hover i{
+transform:rotate(10deg) scale(1.2);
+}
+
+footer{
+margin-top:15px;
+font-size:12px;
+opacity:0.6;
+}
+
+</style></head>
+<body><div class="card"><div class="disc"></div><h1>Nguyen To (天尊)</h1>
+<p class="bio">
+Nho vu ngoc khanh linh<br>
+levantonguyen@gmail.com<br>
+0382035673<br>
+</p><div class="links">
+<a href="https://github.com/Zeroes11209" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<a href="https://www.instagram.com/nguyenlevanto" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.facebook.com/profile.php?id=61588236774981" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+<a href="https://x.com/NguyenTo52208" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+<a href="https://discord.gg/qy42fR3Wg" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+<a href="https://t.me/+2dFJzl41RqFlMDc9" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+<a href="https://on.soundcloud.com/pEH0RVYWMz1r5T98UX" target="_blank"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+<a href="https://www.snapchat.com/add/nguyento2026" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a>
+<a href="https://youtube.com/@nguyento-m3o" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+<a href="https://www.tiktok.com/@kesenkai09" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+</div><footer>© 2026 Nguyen To (天尊)</footer></div></body>
+</html>
